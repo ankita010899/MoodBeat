@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MoodBeat</string>
+    <string name="errorintflite">Could not initialize classifier and views</string>
+</resources>

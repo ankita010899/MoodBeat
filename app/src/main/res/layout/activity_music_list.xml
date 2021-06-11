@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MusicList">
+
+    <TextView
+        android:id="@+id/textv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"
+        android:fontFamily="sans-serif"
+        android:paddingTop="8dp"
+        android:text="Playlist"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/gradient_round"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/white"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/textv"
+        app:layout_constraintBottom_toTopOf="@id/jcplayer"
+        />
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:id="@+id/jcplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:background="@drawable/gradient_bg"
+        app:next_icon="@drawable/ic_next"
+        app:next_icon_color="@color/purple_700"
+        app:pause_icon="@drawable/ic_pause"
+        app:pause_icon_color="@color/purple_700"
+        app:play_icon="@drawable/ic_play"
+        app:play_icon_color="@color/purple_700"
+        app:previous_icon="@drawable/ic_previous"
+        app:previous_icon_color="@color/purple_700"
+        app:progress_color="@color/purple_700"
+        app:random_icon_color="@color/purple_700"
+        app:repeat_icon = "@drawable/ic_repeat"
+        app:repeat_icon_color="@color/purple_700"
+        app:seek_bar_color="@color/purple_700"
+        app:text_audio_current_duration_color="@color/purple_700"
+        app:text_audio_duration_color="@color/purple_700"
+        app:text_audio_title_color="@color/purple_700"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
