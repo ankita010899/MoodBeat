@@ -45,8 +45,8 @@ print(model.summary())
 #this prints the layers, their types, their output shapes and the number of learnable parameters
 
 #path for training and validation data batches to be stored
-train_data_dir = 'E:/Shambhavi Documents/Final Year Project/Codes/new model/traindata'
-validation_data_dir = 'E:/Shambhavi Documents/Final Year Project/Codes/new model/validationdata'
+train_data_dir = 'path-to-training-data-folder'
+validation_data_dir = 'path-to-validation-data-folder'
 
 #used to generate batches of tensor image data with real-time data augmentation
 train_datagen = ImageDataGenerator(
