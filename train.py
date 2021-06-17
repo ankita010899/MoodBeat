@@ -79,7 +79,7 @@ validation_generator = validation_datagen.flow_from_directory(
 
 
 #saving changes after every interval
-checkpoint = ModelCheckpoint('updated_model.h5',
+checkpoint = ModelCheckpoint('model.h5',
                              monitor='val_loss',
                              mode='min',
                              save_best_only=True,
@@ -148,5 +148,5 @@ fer_json = model.to_json()
 with open("new_model.json", "w") as json_file:
     json_file.write(fer_json)
 model.save('./MyModel_tf',save_format='tf')
-model.save("newest_model.h5")
+model.save("new_model.h5")
 model.save_weights("new_model.h5")
