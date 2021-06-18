@@ -1,0 +1,9 @@
+The dataset used for training was obtained by combining FER 2013 dataset and MMA Facial Expression Recognition dataset from Kaggle. 
+The FER 2013 dataset contained grayscale images of size 48x48 pixels. 
+The MMA Facial Expression Recognition dataset had images of different specifications. 
+Thus, all these images were converted as per the images in FER 2013 dataset and combined to obtain an even larger dataset with 40,045 training images and 11,924 testing images.
+MobileNet was used with Keras to train and test our model for seven classes - happy, angry, neutral, sad, surprise, fear and disgust. 
+We trained it for 25 epochs and achieved an accuracy of approximately 75%.
+
+FER 2013 dataset link - https://www.kaggle.com/msambare/fer2013
+MMA Facial Expression Recognition link - https://www.kaggle.com/mahmoudima/mma-facial-expression
